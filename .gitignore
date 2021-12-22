@@ -1,0 +1,6 @@
+.vscode
+*.json
+*.csv
+__pycache__
+!cyber.platform.*.json
+!plans/base_plan.json

@@ -1,0 +1,8 @@
+{
+ 	"base_url": "https://dev-cloud.acronis.com/",
+	"partner_tenant": "partner",
+	"customer_tenant": "customer",
+	"edition": "pck_per_gigabyte",
+	"switch_edition": "pck_per_workload",
+	"cyber_protection_application_id": "6e6d758d-8e74-3ae3-ac84-50eb0dff12eb"
+}
