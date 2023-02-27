@@ -36,7 +36,6 @@ params = {
 # At time of the scripts publication to receive a token
 # with grant type urn:ietf:params:oauth:grant-type:jwt-bearer
 # bc/idp/token need to be used.
-# In C21.07 release, api/2/idp/token endpoint should receive that functionality as well.
 response = requests.post(
     f'{cfg.base_url}bc/idp/token',
     headers={**cfg.header, **{'Content-Type': 'application/x-www-form-urlencoded'}},
