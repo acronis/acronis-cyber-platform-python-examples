@@ -32,12 +32,8 @@ params = {
     'scope': f'urn:acronis.com:tenant-id:{customer_tenant_id}'
 }
 
-# bc is that URL mean Backup Console
-# At time of the scripts publication to receive a token
-# with grant type urn:ietf:params:oauth:grant-type:jwt-bearer
-# bc/idp/token need to be used.
 response = requests.post(
-    f'{cfg.base_url}bc/idp/token',
+    f'{cfg.base_url}api/2/idp/token',
     headers={**cfg.header, **{'Content-Type': 'application/x-www-form-urlencoded'}},
     auth=BearerAuth(cfg.access_token),
     data=params
