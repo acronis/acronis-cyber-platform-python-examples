@@ -32,7 +32,7 @@ token_request = {
 }
 
 response = acronis.post(
-    f'api/2/tenants/{user.id}/registration_tokens',
+    f'api/2/tenants/{user.personal_tenant_id}/registration_tokens',
     data=json.dumps(token_request)
 )
 
